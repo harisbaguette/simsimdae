@@ -1,0 +1,5 @@
+name = "simsimdae"
+pages_build_output_dir = "site/public"
+
+[vars]
+HUGO_VERSION = "0.160.1"

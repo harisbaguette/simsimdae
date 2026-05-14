@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Minesweeper grid 8x6 cells, each 44x32 -->
+  <!-- Unrevealed cells (raised look) -->
+  <g>
+    <!-- Row 1 -->
+    <rect x="20" y="15" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="64" y="15" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <!-- Revealed with number 1 (blue) -->
+    <rect x="108" y="15" width="42" height="30" rx="3" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <text x="129" y="36" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1d4ed8">1</text>
+    <rect x="152" y="15" width="42" height="30" rx="3" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <text x="173" y="36" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#15803d">2</text>
+    <rect x="196" y="15" width="42" height="30" rx="3" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <text x="217" y="36" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1d4ed8">1</text>
+    <rect x="240" y="15" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="284" y="15" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <!-- Flag -->
+    <rect x="328" y="15" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <polygon points="346,20 346,36 356,28" fill="#ef4444"/>
+    <line x1="346" y1="20" x2="346" y2="40" stroke="#1a1a1a" stroke-width="2"/>
+    <!-- Row 2 -->
+    <rect x="20" y="47" width="42" height="30" rx="3" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="64" y="47" width="42" height="30" rx="3" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <text x="85" y="68" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1d4ed8">1</text>
+    <rect x="108" y="47" width="42" height="30" rx="3" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="152" y="47" width="42" height="30" rx="3" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <text x="173" y="68" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1d4ed8">1</text>
+    <rect x="196" y="47" width="42" height="30" rx="3" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <text x="217" y="68" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#15803d">2</text>
+    <rect x="240" y="47" width="42" height="30" rx="3" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <text x="261" y="68" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#15803d">2</text>
+    <rect x="284" y="47" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <!-- Flag -->
+    <rect x="328" y="47" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <polygon points="346,52 346,68 356,60" fill="#ef4444"/>
+    <line x1="346" y1="52" x2="346" y2="72" stroke="#1a1a1a" stroke-width="2"/>
+    <!-- Row 3 - mine exploded -->
+    <rect x="20" y="79" width="42" height="30" rx="3" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="64" y="79" width="42" height="30" rx="3" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <!-- Mine cell (red background) -->
+    <rect x="108" y="79" width="42" height="30" rx="3" fill="#fca5a5" stroke="#ef4444" stroke-width="1.5"/>
+    <!-- Mine icon -->
+    <circle cx="129" cy="94" r="8" fill="#1a1a1a"/>
+    <g stroke="#1a1a1a" stroke-width="2" stroke-linecap="round">
+      <line x1="129" y1="82" x2="129" y2="78"/>
+      <line x1="129" y1="106" x2="129" y2="110"/>
+      <line x1="117" y1="94" x2="113" y2="94"/>
+      <line x1="141" y1="94" x2="145" y2="94"/>
+      <line x1="121" y1="86" x2="117" y2="82"/>
+      <line x1="137" y1="86" x2="141" y2="82"/>
+      <line x1="121" y1="102" x2="117" y2="106"/>
+      <line x1="137" y1="102" x2="141" y2="106"/>
+    </g>
+    <circle cx="125" cy="90" r="2.5" fill="white" opacity="0.6"/>
+    <rect x="152" y="79" width="42" height="30" rx="3" fill="#e5e7eb" stroke="#9ca3af" stroke-width="1"/>
+    <text x="173" y="100" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626">3</text>
+    <rect x="196" y="79" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="240" y="79" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="284" y="79" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="328" y="79" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <!-- Rows 4-6 unrevealed/mixed -->
+    <rect x="20" y="111" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="64" y="111" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="108" y="111" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="152" y="111" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <!-- Flag -->
+    <polygon points="170,116 170,132 180,124" fill="#ef4444"/>
+    <line x1="170" y1="116" x2="170" y2="136" stroke="#1a1a1a" stroke-width="2"/>
+    <rect x="196" y="111" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="240" y="111" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="284" y="111" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+    <rect x="328" y="111" width="42" height="30" rx="3" fill="#d1d5db" stroke="#9ca3af" stroke-width="1"/>
+  </g>
+  <!-- Status bar -->
+  <rect x="20" y="152" width="360" height="28" rx="5" fill="rgba(0,0,0,0.25)"/>
+  <text x="60" y="171" font-family="sans-serif" font-size="13" font-weight="bold" fill="white">💣 10</text>
+  <text x="165" y="171" font-family="sans-serif" font-size="13" font-weight="bold" fill="white">🏳 3</text>
+  <text x="260" y="171" font-family="sans-serif" font-size="13" font-weight="bold" fill="white">⏱ 48s</text>
+  <text x="200" y="210" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">지뢰 찾기</text>
+</svg>

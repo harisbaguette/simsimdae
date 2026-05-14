@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7dd3fc"/>
+      <stop offset="100%" style="stop-color:#bae6fd"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Sky -->
+  <rect x="0" y="0" width="400" height="100" fill="url(#sky)" opacity="0.8"/>
+  <!-- Sun -->
+  <circle cx="340" cy="35" r="22" fill="#fbbf24"/>
+  <g stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round">
+    <line x1="340" y1="5" x2="340" y2="-2"/>
+    <line x1="364" y1="11" x2="370" y2="6"/>
+    <line x1="372" y1="35" x2="380" y2="35"/>
+    <line x1="364" y1="59" x2="370" y2="64"/>
+    <line x1="316" y1="11" x2="310" y2="6"/>
+    <line x1="308" y1="35" x2="300" y2="35"/>
+  </g>
+  <!-- Clouds -->
+  <ellipse cx="80" cy="28" rx="35" ry="18" fill="white" opacity="0.8"/>
+  <ellipse cx="110" cy="22" rx="28" ry="15" fill="white" opacity="0.8"/>
+  <ellipse cx="55" cy="25" rx="25" ry="14" fill="white" opacity="0.8"/>
+  <ellipse cx="220" cy="38" rx="28" ry="14" fill="white" opacity="0.7"/>
+  <ellipse cx="245" cy="32" rx="22" ry="12" fill="white" opacity="0.7"/>
+  <!-- Ground -->
+  <rect x="0" y="100" width="400" height="125" fill="#92400e" opacity="0.6"/>
+  <rect x="0" y="100" width="400" height="15" fill="#65a30d" opacity="0.8"/>
+  <!-- Farm plots (4 rows x 5 cols) -->
+  <g>
+    <!-- Plot row 1 - wheat growing -->
+    <rect x="20" y="115" width="60" height="45" rx="4" fill="#a16207" opacity="0.7"/>
+    <!-- Wheat in plot 1 -->
+    <g stroke="#fbbf24" stroke-width="2" stroke-linecap="round">
+      <line x1="30" y1="155" x2="30" y2="130"/><ellipse cx="30" cy="127" rx="4" ry="7" fill="#fbbf24"/>
+      <line x1="42" y1="155" x2="42" y2="125"/><ellipse cx="42" cy="122" rx="4" ry="7" fill="#fbbf24"/>
+      <line x1="54" y1="155" x2="54" y2="128"/><ellipse cx="54" cy="125" rx="4" ry="7" fill="#fbbf24"/>
+      <line x1="66" y1="155" x2="66" y2="130"/><ellipse cx="66" cy="127" rx="4" ry="7" fill="#fbbf24"/>
+    </g>
+    <!-- Plot 2 - carrots -->
+    <rect x="90" y="115" width="60" height="45" rx="4" fill="#a16207" opacity="0.7"/>
+    <g>
+      <ellipse cx="105" cy="145" rx="8" ry="12" fill="#f97316"/><path d="M103,133 Q105,125 107,133" fill="#22c55e" stroke="#15803d" stroke-width="1"/>
+      <ellipse cx="122" cy="147" rx="8" ry="12" fill="#f97316"/><path d="M120,135 Q122,127 124,135" fill="#22c55e" stroke="#15803d" stroke-width="1"/>
+      <ellipse cx="139" cy="144" rx="8" ry="12" fill="#f97316"/><path d="M137,132 Q139,124 141,132" fill="#22c55e" stroke="#15803d" stroke-width="1"/>
+    </g>
+    <!-- Plot 3 - growing seedlings -->
+    <rect x="160" y="115" width="60" height="45" rx="4" fill="#a16207" opacity="0.7"/>
+    <g fill="#22c55e">
+      <ellipse cx="175" cy="148" rx="10" ry="12"/><rect x="173" y="148" width="4" height="10" fill="#92400e"/>
+      <ellipse cx="193" cy="143" rx="12" ry="15"/><rect x="191" y="153" width="4" height="6" fill="#92400e"/>
+      <ellipse cx="212" cy="147" rx="10" ry="12"/><rect x="210" y="147" width="4" height="10" fill="#92400e"/>
+    </g>
+    <!-- Plot 4 - empty/plowed -->
+    <rect x="230" y="115" width="60" height="45" rx="4" fill="#78350f" opacity="0.7"/>
+    <g stroke="#92400e" stroke-width="2">
+      <line x1="240" y1="125" x2="280" y2="125"/>
+      <line x1="240" y1="135" x2="280" y2="135"/>
+      <line x1="240" y1="145" x2="280" y2="145"/>
+      <line x1="240" y1="155" x2="280" y2="155"/>
+    </g>
+    <!-- Plot 5 - tomatoes -->
+    <rect x="300" y="115" width="75" height="45" rx="4" fill="#a16207" opacity="0.7"/>
+    <circle cx="318" cy="148" r="10" fill="#ef4444" stroke="#b91c1c" stroke-width="1"/>
+    <circle cx="336" cy="143" r="10" fill="#ef4444" stroke="#b91c1c" stroke-width="1"/>
+    <circle cx="354" cy="148" r="10" fill="#f97316" stroke="#b91c1c" stroke-width="1"/>
+    <circle cx="372" cy="143" r="10" fill="#ef4444" stroke="#b91c1c" stroke-width="1"/>
+    <g fill="#16a34a">
+      <rect x="313" y="136" width="10" height="6" rx="2"/>
+      <rect x="331" y="131" width="10" height="6" rx="2"/>
+      <rect x="349" y="136" width="10" height="6" rx="2"/>
+      <rect x="367" y="131" width="10" height="6" rx="2"/>
+    </g>
+  </g>
+  <!-- Farmhouse -->
+  <rect x="20" y="55" width="55" height="42" rx="3" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <polygon points="5,57 75,57 40,30" fill="#dc2626" stroke="#b91c1c" stroke-width="1"/>
+  <rect x="35" y="72" width="14" height="22" rx="2" fill="#7c3aed"/>
+  <rect x="28" y="67" width="12" height="12" rx="1" fill="#bfdbfe"/>
+  <rect x="54" y="67" width="12" height="12" rx="1" fill="#bfdbfe"/>
+  <text x="200" y="215" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">심플 농장</text>
+</svg>

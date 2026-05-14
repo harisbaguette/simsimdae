@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f87171"/>
+      <stop offset="100%" style="stop-color:#dc2626"/>
+    </linearGradient>
+    <radialGradient id="player-grad" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#bfdbfe"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Danger squares raining down -->
+  <rect x="50" y="20" width="35" height="35" rx="4" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" transform="rotate(15,67,37)"/>
+  <rect x="130" y="10" width="40" height="40" rx="4" fill="rgba(0,0,0,0.35)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" transform="rotate(-10,150,30)"/>
+  <rect x="240" y="25" width="32" height="32" rx="4" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" transform="rotate(8,256,41)"/>
+  <rect x="320" y="15" width="38" height="38" rx="4" fill="rgba(0,0,0,0.35)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" transform="rotate(-5,339,34)"/>
+  <rect x="80" y="80" width="36" height="36" rx="4" fill="rgba(0,0,0,0.35)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" transform="rotate(20,98,98)"/>
+  <rect x="280" y="75" width="34" height="34" rx="4" fill="rgba(0,0,0,0.4)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" transform="rotate(-15,297,92)"/>
+  <rect x="170" y="65" width="42" height="42" rx="4" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" transform="rotate(5,191,86)"/>
+  <rect x="350" y="90" width="30" height="30" rx="4" fill="rgba(0,0,0,0.35)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" transform="rotate(12,365,105)"/>
+  <rect x="20" y="145" width="38" height="38" rx="4" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" transform="rotate(-8,39,164)"/>
+  <rect x="330" y="140" width="36" height="36" rx="4" fill="rgba(0,0,0,0.35)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" transform="rotate(10,348,158)"/>
+  <rect x="110" y="130" width="30" height="30" rx="4" fill="rgba(0,0,0,0.3)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5" transform="rotate(-5,125,145)"/>
+  <!-- Speed trails on falling blocks -->
+  <line x1="67" y1="20" x2="67" y2="5" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+  <line x1="150" y1="10" x2="150" y2="-2" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+  <line x1="256" y1="25" x2="256" y2="10" stroke="rgba(255,255,255,0.2)" stroke-width="3"/>
+  <!-- Player circle -->
+  <circle cx="200" cy="170" r="22" fill="url(#player-grad)" stroke="rgba(255,255,255,0.8)" stroke-width="3"/>
+  <circle cx="192" cy="163" r="6" fill="rgba(255,255,255,0.5)"/>
+  <!-- Player glow -->
+  <circle cx="200" cy="170" r="30" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+  <!-- Movement arrow -->
+  <path d="M200,170 L240,155" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" stroke-linecap="round"/>
+  <polygon points="240,148 248,157 237,160" fill="rgba(255,255,255,0.5)"/>
+  <!-- Score/time display -->
+  <rect x="155" y="5" width="90" height="22" rx="6" fill="rgba(0,0,0,0.3)"/>
+  <text x="200" y="21" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="white">SCORE: 2480</text>
+  <text x="200" y="210" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">피하기 게임</text>
+</svg>

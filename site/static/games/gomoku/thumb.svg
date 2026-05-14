@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d97706"/>
+      <stop offset="100%" style="stop-color:#b45309"/>
+    </linearGradient>
+    <radialGradient id="black-stone" cx="35%" cy="28%" r="65%">
+      <stop offset="0%" style="stop-color:#4b5563"/>
+      <stop offset="100%" style="stop-color:#111827"/>
+    </radialGradient>
+    <radialGradient id="white-stone" cx="35%" cy="28%" r="65%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#cbd5e1"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Go board -->
+  <rect x="30" y="15" width="340" height="195" rx="6" fill="url(#board)"/>
+  <!-- Grid lines 9x9 -->
+  <g stroke="rgba(0,0,0,0.4)" stroke-width="1">
+    <line x1="65" y1="15" x2="65" y2="210"/>
+    <line x1="105" y1="15" x2="105" y2="210"/>
+    <line x1="145" y1="15" x2="145" y2="210"/>
+    <line x1="185" y1="15" x2="185" y2="210"/>
+    <line x1="225" y1="15" x2="225" y2="210"/>
+    <line x1="265" y1="15" x2="265" y2="210"/>
+    <line x1="305" y1="15" x2="305" y2="210"/>
+    <line x1="345" y1="15" x2="345" y2="210"/>
+    <line x1="30" y1="38" x2="370" y2="38"/>
+    <line x1="30" y1="65" x2="370" y2="65"/>
+    <line x1="30" y1="92" x2="370" y2="92"/>
+    <line x1="30" y1="119" x2="370" y2="119"/>
+    <line x1="30" y1="146" x2="370" y2="146"/>
+    <line x1="30" y1="173" x2="370" y2="173"/>
+    <line x1="30" y1="200" x2="370" y2="200"/>
+  </g>
+  <!-- Star points -->
+  <g fill="rgba(0,0,0,0.5)">
+    <circle cx="105" cy="65" r="3"/>
+    <circle cx="265" cy="65" r="3"/>
+    <circle cx="185" cy="119" r="3"/>
+    <circle cx="105" cy="173" r="3"/>
+    <circle cx="265" cy="173" r="3"/>
+  </g>
+  <!-- Black stones -->
+  <circle cx="145" cy="92" r="16" fill="url(#black-stone)"/>
+  <circle cx="185" cy="65" r="16" fill="url(#black-stone)"/>
+  <circle cx="225" cy="92" r="16" fill="url(#black-stone)"/>
+  <circle cx="265" cy="119" r="16" fill="url(#black-stone)"/>
+  <circle cx="305" cy="146" r="16" fill="url(#black-stone)"/>
+  <!-- Win! 5 in a diagonal -->
+  <circle cx="145" cy="92" r="16" fill="url(#black-stone)" stroke="#fbbf24" stroke-width="2.5"/>
+  <circle cx="185" cy="65" r="16" fill="url(#black-stone)" stroke="#fbbf24" stroke-width="2.5"/>
+  <circle cx="105" cy="119" r="16" fill="url(#black-stone)" stroke="#fbbf24" stroke-width="2.5"/>
+  <circle cx="65" cy="146" r="16" fill="url(#black-stone)"/>
+  <!-- White stones -->
+  <circle cx="105" cy="65" r="16" fill="url(#white-stone)"/>
+  <circle cx="145" cy="65" r="16" fill="url(#white-stone)"/>
+  <circle cx="225" cy="65" r="16" fill="url(#white-stone)"/>
+  <circle cx="265" cy="92" r="16" fill="url(#white-stone)"/>
+  <circle cx="145" cy="119" r="16" fill="url(#white-stone)"/>
+  <circle cx="185" cy="146" r="16" fill="url(#white-stone)"/>
+  <!-- Last placed stone indicator -->
+  <circle cx="185" cy="65" r="7" fill="none" stroke="rgba(255,100,100,0.7)" stroke-width="2"/>
+  <text x="200" y="218" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="rgba(255,255,255,0.9)">오목</text>
+</svg>

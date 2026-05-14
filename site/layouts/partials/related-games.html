@@ -1,0 +1,12 @@
+{{ $current := . }}
+{{ $allGames := where .Site.RegularPages "Section" "games" }}
+{{ $same := where $allGames "Params.category" $current.Params.category }}
+{{ $others := where $same "Params.game_id" "ne" $current.Params.game_id }}
+{{ if $others }}
+<section class="related">
+  <h3>비슷한 게임</h3>
+  <div class="related-grid">
+    {{ range first 3 $others }}{{ partial "game-card.html" . }}{{ end }}
+  </div>
+</section>
+{{ end }}

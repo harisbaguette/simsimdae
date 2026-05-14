@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <linearGradient id="pile-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fcd34d"/>
+      <stop offset="100%" style="stop-color:#b45309"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Sand pile at bottom -->
+  <ellipse cx="200" cy="195" rx="160" ry="35" fill="url(#pile-grad)" opacity="0.9"/>
+  <ellipse cx="200" cy="185" rx="130" ry="25" fill="#f59e0b" opacity="0.7"/>
+  <ellipse cx="200" cy="178" rx="90" ry="18" fill="#fbbf24" opacity="0.5"/>
+  <!-- Falling sand particles -->
+  <!-- Stream 1 - center -->
+  <rect x="196" y="50" width="8" height="6" rx="1" fill="rgba(255,255,255,0.7)"/>
+  <rect x="197" y="65" width="6" height="5" rx="1" fill="rgba(255,255,255,0.6)"/>
+  <rect x="195" y="80" width="8" height="5" rx="1" fill="rgba(255,200,50,0.8)"/>
+  <rect x="198" y="95" width="6" height="6" rx="1" fill="rgba(255,200,50,0.7)"/>
+  <rect x="196" y="110" width="7" height="5" rx="1" fill="rgba(251,191,36,0.8)"/>
+  <rect x="199" y="125" width="5" height="6" rx="1" fill="rgba(217,119,6,0.8)"/>
+  <rect x="197" y="140" width="7" height="5" rx="1" fill="rgba(217,119,6,0.7)"/>
+  <!-- Stream 2 - left offset -->
+  <rect x="172" y="58" width="6" height="5" rx="1" fill="rgba(255,255,255,0.5)"/>
+  <rect x="174" y="74" width="7" height="5" rx="1" fill="rgba(255,200,50,0.6)"/>
+  <rect x="171" y="90" width="6" height="6" rx="1" fill="rgba(251,191,36,0.7)"/>
+  <rect x="173" y="106" width="8" height="5" rx="1" fill="rgba(217,119,6,0.6)"/>
+  <rect x="172" y="122" width="6" height="5" rx="1" fill="rgba(180,83,9,0.7)"/>
+  <!-- Stream 3 - right offset -->
+  <rect x="224" y="62" width="7" height="5" rx="1" fill="rgba(255,255,255,0.5)"/>
+  <rect x="222" y="78" width="6" height="6" rx="1" fill="rgba(255,200,50,0.6)"/>
+  <rect x="225" y="94" width="7" height="5" rx="1" fill="rgba(251,191,36,0.7)"/>
+  <rect x="223" y="110" width="8" height="5" rx="1" fill="rgba(217,119,6,0.6)"/>
+  <!-- Hourglass / funnel shape -->
+  <path d="M155,20 L245,20 L225,55 L210,55 L210,45 L190,45 L190,55 L175,55 Z" fill="rgba(180,83,9,0.5)" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+  <rect x="188" y="43" width="24" height="14" rx="2" fill="rgba(120,53,15,0.6)" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+  <!-- Scattered particles -->
+  <circle cx="140" cy="100" r="3" fill="rgba(255,255,255,0.4)"/>
+  <circle cx="270" cy="85" r="2.5" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="305" cy="120" r="2" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="100" cy="130" r="2.5" fill="rgba(255,255,255,0.3)"/>
+  <text x="200" y="215" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">모래 시뮬레이터</text>
+</svg>

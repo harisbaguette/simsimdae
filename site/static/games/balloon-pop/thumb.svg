@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fb923c"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    <radialGradient id="b1" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" style="stop-color:#fde68a"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </radialGradient>
+    <radialGradient id="b2" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" style="stop-color:#fca5a5"/>
+      <stop offset="100%" style="stop-color:#ef4444"/>
+    </radialGradient>
+    <radialGradient id="b3" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" style="stop-color:#a5b4fc"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </radialGradient>
+    <radialGradient id="b4" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" style="stop-color:#86efac"/>
+      <stop offset="100%" style="stop-color:#22c55e"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Balloon 1 yellow - left -->
+  <ellipse cx="95" cy="90" rx="38" ry="48" fill="url(#b1)"/>
+  <ellipse cx="83" cy="74" rx="10" ry="7" fill="rgba(255,255,255,0.4)" transform="rotate(-20,83,74)"/>
+  <polygon points="95,138 90,148 100,148" fill="#f59e0b"/>
+  <line x1="95" y1="148" x2="88" y2="185" stroke="#d97706" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <!-- Balloon 2 red - center-left -->
+  <ellipse cx="175" cy="75" rx="42" ry="54" fill="url(#b2)"/>
+  <ellipse cx="162" cy="58" rx="12" ry="8" fill="rgba(255,255,255,0.35)" transform="rotate(-20,162,58)"/>
+  <polygon points="175,129 170,140 180,140" fill="#ef4444"/>
+  <line x1="175" y1="140" x2="165" y2="185" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <!-- Balloon 3 purple - center-right -->
+  <ellipse cx="258" cy="82" rx="40" ry="50" fill="url(#b3)"/>
+  <ellipse cx="246" cy="66" rx="11" ry="7" fill="rgba(255,255,255,0.35)" transform="rotate(-20,246,66)"/>
+  <polygon points="258,132 253,142 263,142" fill="#6366f1"/>
+  <line x1="258" y1="142" x2="250" y2="185" stroke="#4f46e5" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <!-- Balloon 4 green - right -->
+  <ellipse cx="335" cy="95" rx="36" ry="46" fill="url(#b4)"/>
+  <ellipse cx="324" cy="80" rx="9" ry="6" fill="rgba(255,255,255,0.35)" transform="rotate(-20,324,80)"/>
+  <polygon points="335,141 330,151 340,151" fill="#22c55e"/>
+  <line x1="335" y1="151" x2="330" y2="185" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <!-- Pop sparkles on balloon 2 -->
+  <g transform="translate(175,75)" opacity="0.7">
+    <line x1="0" y1="-62" x2="0" y2="-72" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="44" y1="-44" x2="52" y2="-52" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-44" y1="-44" x2="-52" y2="-52" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="62" y1="0" x2="72" y2="0" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-62" y1="0" x2="-72" y2="0" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="210" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">풍선 터뜨리기</text>
+</svg>

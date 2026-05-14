@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f472b6"/>
+      <stop offset="100%" style="stop-color:#db2777"/>
+    </linearGradient>
+    <radialGradient id="ball-grad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#fce7f3"/>
+      <stop offset="100%" style="stop-color:#db2777"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Shadow below ball -->
+  <ellipse cx="202" cy="178" rx="88" ry="18" fill="rgba(0,0,0,0.25)"/>
+  <!-- Squished stress ball - wider, flatter ellipse -->
+  <ellipse cx="200" cy="125" rx="95" ry="70" fill="url(#ball-grad)" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <!-- Highlight -->
+  <ellipse cx="168" cy="96" rx="28" ry="16" fill="rgba(255,255,255,0.3)" transform="rotate(-20,168,96)"/>
+  <!-- Pressure wrinkle lines -->
+  <path d="M120,100 Q140,90 160,100 Q180,110 200,100 Q220,90 240,100 Q260,110 280,100" stroke="rgba(219,39,119,0.5)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M130,120 Q155,108 180,120 Q205,132 230,120 Q255,108 270,120" stroke="rgba(219,39,119,0.4)" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M140,140 Q165,130 190,140 Q215,150 240,140" stroke="rgba(219,39,119,0.35)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Squeeze arrows -->
+  <path d="M50,125 L90,125" stroke="rgba(255,255,255,0.7)" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <path d="M350,125 L310,125" stroke="rgba(255,255,255,0.7)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Arrow heads -->
+  <polygon points="90,118 105,125 90,132" fill="rgba(255,255,255,0.7)"/>
+  <polygon points="310,118 295,125 310,132" fill="rgba(255,255,255,0.7)"/>
+  <!-- Stress dots/specks on ball -->
+  <circle cx="200" cy="125" r="4" fill="rgba(219,39,119,0.4)"/>
+  <circle cx="230" cy="115" r="3" fill="rgba(219,39,119,0.35)"/>
+  <circle cx="165" cy="135" r="3" fill="rgba(219,39,119,0.35)"/>
+  <circle cx="245" cy="140" r="2.5" fill="rgba(219,39,119,0.3)"/>
+  <circle cx="155" cy="108" r="2.5" fill="rgba(219,39,119,0.3)"/>
+  <text x="200" y="215" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">스트레스 볼</text>
+</svg>

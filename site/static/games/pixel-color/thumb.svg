@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f472b6"/>
+      <stop offset="100%" style="stop-color:#db2777"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Pixel art heart (16x14 pixels) displayed on left -->
+  <!-- Each pixel is 14x14 with 1px gap -->
+  <!-- Heart shape pixel map row by row -->
+  <g transform="translate(30, 20)">
+    <!-- Row 1: _ X X _ _ X X _ -->
+    <rect x="15" y="0" width="13" height="13" fill="#f43f5e"/>
+    <rect x="29" y="0" width="13" height="13" fill="#f43f5e"/>
+    <rect x="57" y="0" width="13" height="13" fill="#f43f5e"/>
+    <rect x="71" y="0" width="13" height="13" fill="#f43f5e"/>
+    <!-- Row 2: X X X X X X X X -->
+    <rect x="1" y="14" width="13" height="13" fill="#f43f5e"/>
+    <rect x="15" y="14" width="13" height="13" fill="#fb7185"/>
+    <rect x="29" y="14" width="13" height="13" fill="#f43f5e"/>
+    <rect x="43" y="14" width="13" height="13" fill="#f43f5e"/>
+    <rect x="57" y="14" width="13" height="13" fill="#f43f5e"/>
+    <rect x="71" y="14" width="13" height="13" fill="#fb7185"/>
+    <rect x="85" y="14" width="13" height="13" fill="#f43f5e"/>
+    <rect x="99" y="14" width="13" height="13" fill="#f43f5e"/>
+    <!-- Row 3: X X X X X X X X -->
+    <rect x="1" y="28" width="13" height="13" fill="#f43f5e"/>
+    <rect x="15" y="28" width="13" height="13" fill="#f43f5e"/>
+    <rect x="29" y="28" width="13" height="13" fill="#f43f5e"/>
+    <rect x="43" y="28" width="13" height="13" fill="#f43f5e"/>
+    <rect x="57" y="28" width="13" height="13" fill="#f43f5e"/>
+    <rect x="71" y="28" width="13" height="13" fill="#f43f5e"/>
+    <rect x="85" y="28" width="13" height="13" fill="#f43f5e"/>
+    <rect x="99" y="28" width="13" height="13" fill="#f43f5e"/>
+    <!-- Row 4: X X X X X X X X -->
+    <rect x="1" y="42" width="13" height="13" fill="#f43f5e"/>
+    <rect x="15" y="42" width="13" height="13" fill="#f43f5e"/>
+    <rect x="29" y="42" width="13" height="13" fill="#f43f5e"/>
+    <rect x="43" y="42" width="13" height="13" fill="#f43f5e"/>
+    <rect x="57" y="42" width="13" height="13" fill="#f43f5e"/>
+    <rect x="71" y="42" width="13" height="13" fill="#f43f5e"/>
+    <rect x="85" y="42" width="13" height="13" fill="#f43f5e"/>
+    <rect x="99" y="42" width="13" height="13" fill="#f43f5e"/>
+    <!-- Row 5: _ X X X X X X _ -->
+    <rect x="15" y="56" width="13" height="13" fill="#f43f5e"/>
+    <rect x="29" y="56" width="13" height="13" fill="#f43f5e"/>
+    <rect x="43" y="56" width="13" height="13" fill="#f43f5e"/>
+    <rect x="57" y="56" width="13" height="13" fill="#f43f5e"/>
+    <rect x="71" y="56" width="13" height="13" fill="#f43f5e"/>
+    <rect x="85" y="56" width="13" height="13" fill="#f43f5e"/>
+    <!-- Row 6: _ _ X X X X _ _ -->
+    <rect x="29" y="70" width="13" height="13" fill="#f43f5e"/>
+    <rect x="43" y="70" width="13" height="13" fill="#f43f5e"/>
+    <rect x="57" y="70" width="13" height="13" fill="#f43f5e"/>
+    <rect x="71" y="70" width="13" height="13" fill="#f43f5e"/>
+    <!-- Row 7: _ _ _ X X _ _ _ -->
+    <rect x="43" y="84" width="13" height="13" fill="#f43f5e"/>
+    <rect x="57" y="84" width="13" height="13" fill="#f43f5e"/>
+    <!-- Grid overlay for uncolored section (right half) -->
+    <rect x="57" y="0" width="56" height="98" fill="rgba(255,255,255,0.12)" stroke="none"/>
+    <!-- Uncolored pixels (grid outline only) on right side -->
+  </g>
+  <!-- Color palette on right -->
+  <rect x="200" y="20" width="175" height="170" rx="8" fill="rgba(0,0,0,0.2)"/>
+  <text x="287" y="42" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="rgba(255,255,255,0.8)">색상 팔레트</text>
+  <!-- Color swatches -->
+  <rect x="215" y="52" width="30" height="30" rx="4" fill="#f43f5e" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+  <rect x="253" y="52" width="30" height="30" rx="4" fill="#f97316" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <rect x="291" y="52" width="30" height="30" rx="4" fill="#facc15" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <rect x="329" y="52" width="30" height="30" rx="4" fill="#22c55e" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <rect x="215" y="90" width="30" height="30" rx="4" fill="#3b82f6" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <rect x="253" y="90" width="30" height="30" rx="4" fill="#8b5cf6" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <rect x="291" y="90" width="30" height="30" rx="4" fill="#ec4899" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <rect x="329" y="90" width="30" height="30" rx="4" fill="#ffffff" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <!-- Pencil icon -->
+  <g transform="translate(255,140)">
+    <rect x="0" y="0" width="12" height="38" rx="3" fill="#fbbf24" transform="rotate(30,6,19)"/>
+    <polygon points="-3,45 6,33 15,45 9,50 3,50" fill="#fbbf24" transform="rotate(30,6,19) translate(0,-2)"/>
+  </g>
+  <text x="200" y="215" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">픽셀 컬러링</text>
+</svg>

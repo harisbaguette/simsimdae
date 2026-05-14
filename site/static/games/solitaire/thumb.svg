@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Green felt background -->
+  <rect x="10" y="10" width="380" height="205" rx="8" fill="#166534" opacity="0.8"/>
+  <!-- Card back deck -->
+  <rect x="22" y="20" width="52" height="72" rx="5" fill="#1e40af" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+  <rect x="26" y="24" width="44" height="64" rx="3" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+  <!-- Card stacks in tableau (7 columns shown partially) -->
+  <!-- Col 1 -->
+  <rect x="22" y="102" width="52" height="72" rx="5" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="28" y="118" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ef4444">A</text>
+  <text x="48" y="165" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#ef4444">♥</text>
+  <!-- Col 2 -->
+  <rect x="82" y="102" width="52" height="72" rx="5" fill="#1e40af" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <rect x="88" y="108" width="40" height="58" rx="3" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="82" y="118" width="52" height="72" rx="5" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="88" y="134" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1a1a1a">K</text>
+  <text x="108" y="180" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#1a1a1a">♠</text>
+  <!-- Col 3 -->
+  <rect x="142" y="102" width="52" height="72" rx="5" fill="#1e40af" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <rect x="142" y="114" width="52" height="72" rx="5" fill="#1e40af" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <rect x="142" y="126" width="52" height="72" rx="5" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="148" y="142" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ef4444">Q</text>
+  <text x="168" y="188" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#ef4444">♦</text>
+  <!-- Col 4 -->
+  <rect x="202" y="102" width="52" height="72" rx="5" fill="#1e40af" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <rect x="202" y="114" width="52" height="72" rx="5" fill="#1e40af" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <rect x="202" y="126" width="52" height="72" rx="5" fill="#1e40af" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <rect x="202" y="138" width="52" height="72" rx="5" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="208" y="154" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1a1a1a">J</text>
+  <text x="228" y="200" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#1a1a1a">♣</text>
+  <!-- Foundation piles (top right) -->
+  <rect x="270" y="20" width="52" height="72" rx="5" fill="rgba(0,0,0,0.2)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="296" y="62" text-anchor="middle" font-family="sans-serif" font-size="28" fill="rgba(255,255,255,0.3)">♠</text>
+  <rect x="330" y="20" width="52" height="72" rx="5" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <text x="336" y="36" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ef4444">A</text>
+  <text x="356" y="78" text-anchor="middle" font-family="sans-serif" font-size="26" fill="#ef4444">♥</text>
+  <text x="200" y="215" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">솔리테어</text>
+</svg>

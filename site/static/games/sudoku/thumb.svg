@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- 9x9 sudoku grid -->
+  <rect x="55" y="10" width="290" height="200" rx="6" fill="rgba(255,255,255,0.95)"/>
+  <!-- Grid lines thin -->
+  <g stroke="rgba(0,0,0,0.15)" stroke-width="0.8">
+    <!-- Vertical thin lines -->
+    <line x1="88" y1="10" x2="88" y2="210"/>
+    <line x1="121" y1="10" x2="121" y2="210"/>
+    <line x1="154" y1="10" x2="154" y2="210"/>
+    <line x1="187" y1="10" x2="187" y2="210"/>
+    <line x1="220" y1="10" x2="220" y2="210"/>
+    <line x1="253" y1="10" x2="253" y2="210"/>
+    <line x1="286" y1="10" x2="286" y2="210"/>
+    <line x1="319" y1="10" x2="319" y2="210"/>
+    <!-- Horizontal thin lines -->
+    <line x1="55" y1="32" x2="345" y2="32"/>
+    <line x1="55" y1="54" x2="345" y2="54"/>
+    <line x1="55" y1="76" x2="345" y2="76"/>
+    <line x1="55" y1="98" x2="345" y2="98"/>
+    <line x1="55" y1="120" x2="345" y2="120"/>
+    <line x1="55" y1="142" x2="345" y2="142"/>
+    <line x1="55" y1="164" x2="345" y2="164"/>
+    <line x1="55" y1="186" x2="345" y2="186"/>
+  </g>
+  <!-- Bold 3x3 box lines -->
+  <g stroke="rgba(30,58,138,0.8)" stroke-width="2.5">
+    <line x1="154" y1="10" x2="154" y2="210"/>
+    <line x1="253" y1="10" x2="253" y2="210"/>
+    <line x1="55" y1="76" x2="345" y2="76"/>
+    <line x1="55" y1="142" x2="345" y2="142"/>
+  </g>
+  <!-- Numbers -->
+  <g font-family="sans-serif" font-size="14" text-anchor="middle">
+    <!-- Given numbers (bold, dark blue) -->
+    <g font-weight="bold" fill="#1e3a8a">
+      <text x="71" y="27">5</text>
+      <text x="104" y="27">3</text>
+      <text x="170" y="27">7</text>
+      <text x="71" y="49">6</text>
+      <text x="203" y="49">1</text>
+      <text x="236" y="49">9</text>
+      <text x="269" y="49">5</text>
+      <text x="137" y="71">9</text>
+      <text x="170" y="71">8</text>
+      <text x="302" y="71">6</text>
+      <text x="71" y="93">8</text>
+      <text x="302" y="93">3</text>
+      <text x="71" y="115">4</text>
+      <text x="137" y="115">8</text>
+      <text x="269" y="115">3</text>
+      <text x="71" y="137">7</text>
+      <text x="302" y="137">2</text>
+      <text x="104" y="159">6</text>
+      <text x="203" y="159">2</text>
+      <text x="104" y="181">2</text>
+      <text x="137" y="181">8</text>
+      <text x="236" y="181">4</text>
+      <text x="302" y="181">1</text>
+      <text x="170" y="203">8</text>
+      <text x="203" y="203">7</text>
+      <text x="335" y="203">9</text>
+    </g>
+    <!-- Solved/penciled numbers (lighter) -->
+    <g fill="#60a5fa" font-weight="normal">
+      <text x="236" y="27">4</text>
+      <text x="269" y="27">6</text>
+      <text x="302" y="27">8</text>
+      <text x="335" y="27">1</text>
+      <text x="137" y="49">8</text>
+      <text x="170" y="49">7</text>
+      <text x="335" y="49">4</text>
+      <text x="71" y="71">4</text>
+      <text x="104" y="71">2</text>
+      <text x="236" y="71">3</text>
+      <text x="335" y="71">1</text>
+    </g>
+  </g>
+  <!-- Highlight cell -->
+  <rect x="220" y="98" width="33" height="22" rx="2" fill="rgba(96,165,250,0.3)"/>
+  <text x="236" y="115" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#1e3a8a" font-weight="bold">5</text>
+  <text x="200" y="215" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">스도쿠</text>
+</svg>

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8"/>
+      <stop offset="100%" style="stop-color:#0284c7"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9" stop-opacity="0.8"/>
+      <stop offset="100%" style="stop-color:#0369a1" stop-opacity="0.9"/>
+    </linearGradient>
+    <radialGradient id="pond" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#38bdf8"/>
+      <stop offset="100%" style="stop-color:#075985"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Grassy ground -->
+  <ellipse cx="200" cy="185" rx="185" ry="60" fill="#16a34a"/>
+  <!-- Pond -->
+  <ellipse cx="200" cy="155" rx="170" ry="80" fill="url(#pond)"/>
+  <!-- Water surface ripples -->
+  <ellipse cx="200" cy="100" rx="165" ry="30" fill="rgba(255,255,255,0.08)"/>
+  <g stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none">
+    <ellipse cx="120" cy="95" rx="25" ry="8"/>
+    <ellipse cx="280" cy="88" rx="30" ry="9"/>
+    <ellipse cx="200" cy="80" rx="20" ry="6"/>
+    <ellipse cx="150" cy="115" rx="15" ry="5"/>
+    <ellipse cx="320" cy="110" rx="18" ry="6"/>
+  </g>
+  <!-- Fish 1 - orange koi, swimming right -->
+  <g transform="translate(100,120)">
+    <ellipse cx="0" cy="0" rx="35" ry="16" fill="#f97316"/>
+    <ellipse cx="-5" cy="0" rx="25" ry="11" fill="#fb923c"/>
+    <!-- Tail -->
+    <path d="M-35,0 L-50,-12 L-48,0 L-50,12 Z" fill="#f97316"/>
+    <!-- Fin -->
+    <path d="M-5,-16 Q5,-28 15,-16" fill="#ea580c" opacity="0.8"/>
+    <!-- Eye -->
+    <circle cx="28" cy="-4" r="4" fill="white"/>
+    <circle cx="29" cy="-4" r="2" fill="#1a1a1a"/>
+    <!-- Scales pattern -->
+    <g fill="rgba(0,0,0,0.1)" stroke="none">
+      <ellipse cx="10" cy="0" rx="8" ry="5"/>
+      <ellipse cx="-5" cy="0" rx="8" ry="5"/>
+      <ellipse cx="-18" cy="0" rx="8" ry="5"/>
+    </g>
+  </g>
+  <!-- Fish 2 - blue/green, swimming left -->
+  <g transform="translate(280,145) scale(-1,1)">
+    <ellipse cx="0" cy="0" rx="30" ry="13" fill="#06b6d4"/>
+    <ellipse cx="-5" cy="0" rx="20" ry="9" fill="#22d3ee"/>
+    <path d="M-30,0 L-44,-10 L-42,0 L-44,10 Z" fill="#0891b2"/>
+    <path d="M0,-13 Q8,-22 16,-13" fill="#0e7490" opacity="0.8"/>
+    <circle cx="25" cy="-3" r="3.5" fill="white"/>
+    <circle cx="26" cy="-3" r="1.8" fill="#1a1a1a"/>
+  </g>
+  <!-- Fish 3 - red, small, swimming right -->
+  <g transform="translate(200,165)">
+    <ellipse cx="0" cy="0" rx="22" ry="10" fill="#ef4444"/>
+    <path d="M-22,0 L-32,-8 L-30,0 L-32,8 Z" fill="#dc2626"/>
+    <path d="M0,-10 Q6,-18 12,-10" fill="#b91c1c" opacity="0.8"/>
+    <circle cx="18" cy="-2" r="3" fill="white"/>
+    <circle cx="19" cy="-2" r="1.5" fill="#1a1a1a"/>
+  </g>
+  <!-- Fish 4 - yellow, deep, small -->
+  <g transform="translate(155,148)" opacity="0.7">
+    <ellipse cx="0" cy="0" rx="18" ry="8" fill="#fbbf24"/>
+    <path d="M-18,0 L-26,-6 L-25,0 L-26,6 Z" fill="#f59e0b"/>
+    <circle cx="14" cy="-2" r="2.5" fill="white"/>
+    <circle cx="15" cy="-2" r="1.2" fill="#1a1a1a"/>
+  </g>
+  <!-- Lily pad -->
+  <ellipse cx="70" cy="108" rx="28" ry="12" fill="#16a34a" opacity="0.8"/>
+  <path d="M70,96 L70,108 L80,98" fill="#15803d" opacity="0.8"/>
+  <!-- Lily flower -->
+  <circle cx="70" cy="97" r="7" fill="#fce7f3"/>
+  <circle cx="70" cy="97" r="4" fill="#f9a8d4"/>
+  <!-- Reed plants -->
+  <line x1="358" y1="80" x2="352" y2="130" stroke="#65a30d" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="354" cy="78" rx="6" ry="14" fill="#92400e"/>
+  <line x1="372" y1="70" x2="368" y2="120" stroke="#65a30d" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="370" cy="68" rx="5" ry="12" fill="#78350f"/>
+  <text x="200" y="215" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">물고기 연못</text>
+</svg>

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container" style="padding:40px 16px">
+  <h1 style="font-size:1.8rem;font-weight:900;margin-bottom:24px">{{ .Title }}</h1>
+  {{ $games := where .Pages "Section" "games" }}
+  {{ if $games }}
+  <div class="game-grid">
+    {{ range $games }}{{ partial "game-card.html" . }}{{ end }}
+  </div>
+  {{ else }}
+  <div class="game-grid">
+    {{ range .Pages }}{{ partial "game-card.html" . }}{{ end }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}

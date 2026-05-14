@@ -1,0 +1,12 @@
+<a class="game-card" href="{{ .Permalink }}">
+  <div class="game-card-thumb" style="background:{{ .Params.thumb_bg | default "var(--c-surface2)" }}">
+    <span>{{ .Params.emoji | default "🎮" }}</span>
+  </div>
+  <div class="game-card-body">
+    <div class="game-card-title">{{ .Title }}</div>
+    <div class="game-card-desc">{{ .Params.tagline }}</div>
+    <div class="game-card-tags">
+      {{ range first 2 .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+    </div>
+  </div>
+</a>

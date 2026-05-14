@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <linearGradient id="card-back" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1d4ed8"/>
+      <stop offset="100%" style="stop-color:#1e40af"/>
+    </linearGradient>
+    <linearGradient id="card-front" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fefce8"/>
+      <stop offset="100%" style="stop-color:#fef9c3"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- 4 face-down cards -->
+  <!-- Card 1 face-down -->
+  <rect x="20" y="60" width="75" height="105" rx="8" fill="url(#card-back)" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+  <rect x="28" y="68" width="59" height="89" rx="5" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <text x="57" y="121" text-anchor="middle" font-size="28" opacity="0.6">?</text>
+  <!-- Card 2 face-up (star) -->
+  <rect x="110" y="60" width="75" height="105" rx="8" fill="url(#card-front)" stroke="rgba(255,200,0,0.8)" stroke-width="2.5"/>
+  <text x="147" y="128" text-anchor="middle" font-size="52">⭐</text>
+  <!-- Card 3 face-up (star - match!) -->
+  <rect x="200" y="60" width="75" height="105" rx="8" fill="url(#card-front)" stroke="rgba(255,200,0,0.8)" stroke-width="2.5"/>
+  <text x="237" y="128" text-anchor="middle" font-size="52">⭐</text>
+  <!-- Match glow -->
+  <rect x="200" y="60" width="75" height="105" rx="8" fill="none" stroke="rgba(255,230,0,0.6)" stroke-width="5"/>
+  <!-- Card 4 face-down -->
+  <rect x="300" y="60" width="75" height="105" rx="8" fill="url(#card-back)" stroke="rgba(255,255,255,0.5)" stroke-width="2"/>
+  <rect x="308" y="68" width="59" height="89" rx="5" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <text x="337" y="121" text-anchor="middle" font-size="28" opacity="0.6">?</text>
+  <!-- Match sparkles -->
+  <circle cx="147" cy="70" r="4" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="237" cy="70" r="4" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="120" cy="85" r="3" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="270" cy="85" r="3" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="182" cy="73" r="5" fill="#fbbf24" opacity="0.7"/>
+  <circle cx="215" cy="73" r="5" fill="#fbbf24" opacity="0.7"/>
+  <text x="200" y="210" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">짝 맞추기</text>
+</svg>

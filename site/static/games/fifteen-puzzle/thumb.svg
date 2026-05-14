@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#818cf8"/>
+      <stop offset="100%" style="stop-color:#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="tile-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e7ff"/>
+      <stop offset="100%" style="stop-color:#c7d2fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- 4x4 grid -->
+  <rect x="90" y="15" width="220" height="185" rx="10" fill="rgba(0,0,0,0.3)"/>
+  <!-- Tiles - row 1 -->
+  <rect x="97" y="22" width="48" height="40" rx="5" fill="url(#tile-grad)"/>
+  <text x="121" y="48" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#4338ca">1</text>
+  <rect x="151" y="22" width="48" height="40" rx="5" fill="url(#tile-grad)"/>
+  <text x="175" y="48" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#4338ca">2</text>
+  <rect x="205" y="22" width="48" height="40" rx="5" fill="url(#tile-grad)"/>
+  <text x="229" y="48" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#4338ca">3</text>
+  <rect x="259" y="22" width="48" height="40" rx="5" fill="url(#tile-grad)"/>
+  <text x="283" y="48" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#4338ca">4</text>
+  <!-- Row 2 -->
+  <rect x="97" y="68" width="48" height="40" rx="5" fill="url(#tile-grad)"/>
+  <text x="121" y="94" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#4338ca">5</text>
+  <rect x="151" y="68" width="48" height="40" rx="5" fill="url(#tile-grad)"/>
+  <text x="175" y="94" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#4338ca">6</text>
+  <rect x="205" y="68" width="48" height="40" rx="5" fill="url(#tile-grad)"/>
+  <text x="229" y="94" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#4338ca">7</text>
+  <!-- Empty tile -->
+  <rect x="259" y="68" width="48" height="40" rx="5" fill="rgba(0,0,0,0.2)" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- Row 3 -->
+  <rect x="97" y="114" width="48" height="40" rx="5" fill="url(#tile-grad)"/>
+  <text x="121" y="140" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#4338ca">9</text>
+  <rect x="151" y="114" width="48" height="40" rx="5" fill="url(#tile-grad)"/>
+  <text x="175" y="140" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#4338ca">10</text>
+  <rect x="205" y="114" width="48" height="40" rx="5" fill="#fbbf24"/>
+  <text x="229" y="140" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white">8</text>
+  <rect x="259" y="114" width="48" height="40" rx="5" fill="url(#tile-grad)"/>
+  <text x="283" y="140" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#4338ca">11</text>
+  <!-- Row 4 -->
+  <rect x="97" y="160" width="48" height="32" rx="5" fill="url(#tile-grad)"/>
+  <text x="121" y="181" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#4338ca">13</text>
+  <rect x="151" y="160" width="48" height="32" rx="5" fill="url(#tile-grad)"/>
+  <text x="175" y="181" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#4338ca">14</text>
+  <rect x="205" y="160" width="48" height="32" rx="5" fill="url(#tile-grad)"/>
+  <text x="229" y="181" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#4338ca">15</text>
+  <rect x="259" y="160" width="48" height="32" rx="5" fill="url(#tile-grad)"/>
+  <text x="283" y="181" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#4338ca">12</text>
+  <!-- Arrow showing movement -->
+  <path d="M270,82 L270,62 L253,62" stroke="#fbbf24" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="250,58 250,66 242,62" fill="#fbbf24"/>
+  <text x="200" y="215" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">15 퍼즐</text>
+</svg>

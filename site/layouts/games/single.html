@@ -1,0 +1,178 @@
+{{ define "main" }}
+{{ $gid := .Params.game_id }}
+<div class="container">
+  <div class="ad-slot ad-top" id="ad-top"><span>광고 영역</span></div>
+  <header class="game-header">
+    <a class="back-btn" href="/">← 목록</a>
+    <h1 class="game-title-h1">{{ .Title }}</h1>
+    <div class="score-box">
+      <div class="score-num" id="score-display">0</div>
+      <div class="score-label">점수</div>
+    </div>
+  </header>
+</div>
+
+<div class="game-page-layout">
+  <div>
+    <!-- 레벨 선택 -->
+    <div class="level-select" id="level-select">
+      {{ if .Params.difficulties }}
+      <div class="diff-tabs" id="diff-tabs">
+        {{ range .Params.difficulties }}
+        <button class="diff-btn" data-diff="{{ .id }}">{{ .label }}</button>
+        {{ end }}
+      </div>
+      {{ end }}
+      <div class="stage-grid" id="stage-grid"></div>
+      <button class="play-btn" id="play-btn">▶ 시작하기</button>
+    </div>
+
+    <!-- 게임 영역 -->
+    <div class="game-wrap" id="game-wrap" hidden>
+      <div id="game-root"></div>
+      <div class="game-overlay" id="game-overlay" hidden>
+        <h2 id="overlay-title">게임 오버</h2>
+        <p id="overlay-score" style="color:var(--c-brand-l);font-size:1.2rem;font-weight:700"></p>
+        <button class="overlay-btn" id="restart-btn">🔄 다시 시작</button>
+        <button class="overlay-btn" id="menu-btn" style="background:var(--c-surface2);color:var(--c-text)">📋 메뉴</button>
+      </div>
+    </div>
+
+    <!-- SEO 설명 -->
+    <div style="padding:16px 0;color:var(--c-muted);font-size:.85rem;line-height:1.7">{{ .Content }}</div>
+    <div class="ad-slot ad-bottom" id="ad-bottom"><span>광고 영역</span></div>
+    {{ partial "related-games.html" . }}
+  </div>
+
+  <aside>
+    {{ partial "leaderboard.html" . }}
+    <div class="ad-slot ad-side" id="ad-side" style="margin-top:16px"><span>광고 영역</span></div>
+  </aside>
+</div>
+
+<script>
+window.GAME_CONFIG = {
+  gameId: "{{ $gid }}",
+  title: {{ .Title | jsonify }},
+  difficulties: {{ if .Params.difficulties }}{{ .Params.difficulties | jsonify }}{{ else }}[]{{ end }},
+  stages: {{ .Params.stages | default 10 }},
+  hasLeaderboard: {{ .Params.has_leaderboard | default false }},
+  scoreType: "{{ .Params.score_type | default "points" }}",
+  higherIsBetter: {{ .Params.higher_is_better | default true }}
+};
+
+// 레벨 선택 UI 초기화
+(function() {
+  const cfg = window.GAME_CONFIG;
+  const diffTabs = document.getElementById('diff-tabs');
+  const stageGrid = document.getElementById('stage-grid');
+  const playBtn = document.getElementById('play-btn');
+  const levelSelect = document.getElementById('level-select');
+  const gameWrap = document.getElementById('game-wrap');
+  const overlay = document.getElementById('game-overlay');
+  const restartBtn = document.getElementById('restart-btn');
+  const menuBtn = document.getElementById('menu-btn');
+
+  let selectedDiff = cfg.difficulties.length ? cfg.difficulties[0].id : 'normal';
+  let selectedStage = 1;
+
+  function getStageCount() {
+    const d = cfg.difficulties.find(x => x.id === selectedDiff);
+    return d ? (d.stages || cfg.stages) : cfg.stages;
+  }
+
+  function renderStages() {
+    const count = getStageCount();
+    stageGrid.innerHTML = '';
+    for (let i = 1; i <= count; i++) {
+      const btn = document.createElement('button');
+      btn.className = 'stage-btn';
+      btn.textContent = i;
+      const cleared = localStorage.getItem(`cleared_${cfg.gameId}_${selectedDiff}_${i}`);
+      if (cleared) btn.classList.add('cleared');
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.stage-btn').forEach(b => b.style.borderColor = '');
+        btn.style.borderColor = 'var(--c-brand)';
+        selectedStage = i;
+      });
+      stageGrid.appendChild(btn);
+    }
+    // 첫 번째 선택
+    stageGrid.firstChild && (stageGrid.firstChild.style.borderColor = 'var(--c-brand)');
+  }
+
+  // 난이도 탭
+  if (diffTabs) {
+    const btns = diffTabs.querySelectorAll('.diff-btn');
+    btns[0] && btns[0].classList.add('active');
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        selectedDiff = btn.dataset.diff;
+        selectedStage = 1;
+        renderStages();
+      });
+    });
+  }
+
+  renderStages();
+
+  // 게임 시작
+  playBtn.addEventListener('click', () => {
+    levelSelect.hidden = true;
+    gameWrap.hidden = false;
+    window.GAME_SELECTED = { diff: selectedDiff, stage: selectedStage };
+    if (typeof window.startGame === 'function') window.startGame(selectedDiff, selectedStage);
+  });
+
+  // 오버레이 버튼
+  restartBtn && restartBtn.addEventListener('click', () => {
+    overlay.hidden = true;
+    if (typeof window.startGame === 'function') window.startGame(selectedDiff, selectedStage);
+  });
+  menuBtn && menuBtn.addEventListener('click', () => {
+    overlay.hidden = true;
+    gameWrap.hidden = true;
+    levelSelect.hidden = false;
+  });
+
+  // 게임 오버 이벤트 리스너
+  window.addEventListener('gameOver', e => {
+    const score = e.detail?.score ?? 0;
+    document.getElementById('overlay-title').textContent = '게임 오버';
+    document.getElementById('overlay-score').textContent = `점수: ${score.toLocaleString()}`;
+    overlay.hidden = false;
+    onRoundEnd();
+    // 스테이지 클리어 표시
+    if (e.detail?.cleared) {
+      localStorage.setItem(`cleared_${cfg.gameId}_${selectedDiff}_${selectedStage}`, '1');
+    }
+    if (cfg.hasLeaderboard && score > 0) {
+      setTimeout(() => showScoreSubmit(cfg.gameId, score), 500);
+    }
+  });
+
+  window.addEventListener('gameClear', e => {
+    const score = e.detail?.score ?? 0;
+    document.getElementById('overlay-title').textContent = '🎉 클리어!';
+    document.getElementById('overlay-score').textContent = `점수: ${score.toLocaleString()}`;
+    overlay.hidden = false;
+    localStorage.setItem(`cleared_${cfg.gameId}_${selectedDiff}_${selectedStage}`, '1');
+    if (cfg.hasLeaderboard && score > 0) {
+      setTimeout(() => showScoreSubmit(cfg.gameId, score), 500);
+    }
+  });
+
+  // 점수 업데이트
+  window.updateScore = function(n) {
+    const el = document.getElementById('score-display');
+    if (el) { el.textContent = n.toLocaleString(); el.classList.remove('score-pop'); void el.offsetWidth; el.classList.add('score-pop'); }
+  };
+
+  // 리더보드 초기화
+  if (typeof LB !== 'undefined') LB.init(cfg.gameId);
+})();
+</script>
+<script src="/games/{{ $gid }}/game.js" defer></script>
+{{ end }}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34d399"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Letter grid -->
+  <rect x="30" y="15" width="245" height="185" rx="8" fill="rgba(0,0,0,0.25)"/>
+  <!-- Grid cells with letters 8x7 -->
+  <g font-family="monospace" font-size="16" font-weight="bold" fill="rgba(255,255,255,0.85)" text-anchor="middle">
+    <!-- Row 1 -->
+    <text x="58" y="45">P</text><text x="88" y="45">U</text><text x="118" y="45">Z</text><text x="148" y="45">Z</text><text x="178" y="45">L</text><text x="208" y="45">E</text><text x="238" y="45">S</text>
+    <!-- Row 2 -->
+    <text x="58" y="70">W</text><text x="88" y="70">O</text><text x="118" y="70">R</text><text x="148" y="70">D</text><text x="178" y="70">Q</text><text x="208" y="70">X</text><text x="238" y="70">K</text>
+    <!-- Row 3 - GAME highlighted -->
+    <text x="58" y="95">G</text><text x="88" y="95">A</text><text x="118" y="95">M</text><text x="148" y="95">E</text><text x="178" y="95">R</text><text x="208" y="95">V</text><text x="238" y="95">B</text>
+    <!-- Row 4 -->
+    <text x="58" y="120">T</text><text x="88" y="120">L</text><text x="118" y="120">N</text><text x="148" y="120">H</text><text x="178" y="120">F</text><text x="208" y="120">U</text><text x="238" y="120">Y</text>
+    <!-- Row 5 - FUN highlighted vertical -->
+    <text x="58" y="145">F</text><text x="88" y="145">I</text><text x="118" y="145">N</text><text x="148" y="145">D</text><text x="178" y="145">J</text><text x="208" y="145">N</text><text x="238" y="145">C</text>
+    <!-- Row 6 -->
+    <text x="58" y="170">U</text><text x="88" y="170">O</text><text x="118" y="170">A</text><text x="148" y="170">W</text><text x="178" y="170">K</text><text x="208" y="170">M</text><text x="238" y="170">P</text>
+    <!-- Row 7 -->
+    <text x="58" y="192">N</text><text x="88" y="192">X</text><text x="118" y="192">Q</text><text x="148" y="192">E</text><text x="178" y="192">Z</text><text x="208" y="192">B</text><text x="238" y="192">H</text>
+  </g>
+  <!-- Highlight GAME (row 3) -->
+  <rect x="40" y="81" width="122" height="24" rx="12" fill="rgba(255,230,0,0.35)" stroke="rgba(255,230,0,0.7)" stroke-width="2"/>
+  <!-- Highlight FUN (vertical, col 1) -->
+  <rect x="44" y="131" width="26" height="74" rx="13" fill="rgba(255,100,100,0.35)" stroke="rgba(255,150,150,0.7)" stroke-width="2"/>
+  <!-- Word list on right -->
+  <rect x="285" y="15" width="105" height="185" rx="8" fill="rgba(0,0,0,0.2)"/>
+  <text x="337" y="38" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="rgba(255,255,255,0.7)">단어 목록</text>
+  <text x="295" y="62" font-family="sans-serif" font-size="13" font-weight="bold" fill="rgba(255,230,0,0.9)">✓ GAME</text>
+  <text x="295" y="84" font-family="sans-serif" font-size="13" font-weight="bold" fill="rgba(255,150,150,0.9)">✓ FUN</text>
+  <text x="295" y="106" font-family="sans-serif" font-size="13" fill="rgba(255,255,255,0.7)">WORD</text>
+  <text x="295" y="128" font-family="sans-serif" font-size="13" fill="rgba(255,255,255,0.7)">FIND</text>
+  <text x="295" y="150" font-family="sans-serif" font-size="13" fill="rgba(255,255,255,0.7)">PUZZLE</text>
+  <text x="200" y="215" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">단어 찾기</text>
+</svg>

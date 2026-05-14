@@ -1,0 +1,26 @@
+baseURL: "https://simsimdae.com/"
+languageCode: "ko-KR"
+title: "심심해? 게임"
+enableRobotsTXT: true
+canonifyURLs: false
+paginate: 40
+
+outputs:
+  home: ["HTML", "RSS"]
+  section: ["HTML"]
+  page: ["HTML"]
+  taxonomy: ["HTML"]
+  term: ["HTML"]
+
+params:
+  description: "심심하거나 스트레스받을 때 바로 켜는 무료 브라우저 게임 모음. 설치·로그인 없이 즉시 플레이."
+  domain: "simsimdae.com"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+taxonomies:
+  categories: categories
+  tags: tags

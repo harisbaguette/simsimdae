@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>{{ partial "head.html" . }}</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-logo" href="/">심심해<span>?</span></a>
+    <div class="genre-filter">
+      <a class="genre-btn" href="/">전체</a>
+      <a class="genre-btn" href="/categories/stress/">💆 스트레스</a>
+      <a class="genre-btn" href="/categories/idle/">🌾 아이들</a>
+      <a class="genre-btn" href="/categories/puzzle/">🧩 퍼즐</a>
+      <a class="genre-btn" href="/categories/arcade/">🕹 아케이드</a>
+      <a class="genre-btn" href="/categories/board/">♟ 보드</a>
+      <a class="genre-btn" href="/categories/korea/">🇰🇷 한국</a>
+      <a class="genre-btn" href="/blog/">블로그</a>
+    </div>
+  </div>
+</nav>
+
+{{ block "main" . }}{{ end }}
+
+<footer>
+  <div class="container" style="text-align:center;padding:32px 16px;color:var(--c-muted);font-size:.8rem;">
+    <p><a href="/privacy/">개인정보처리방침</a> · <a href="/about/">소개</a></p>
+    <p style="margin-top:8px">© 2026 심심해? 게임 · 무료 브라우저 게임 모음</p>
+  </div>
+</footer>
+
+<script src="/assets/leaderboard.js" defer></script>
+<script src="/assets/share.js" defer></script>
+<script src="/assets/ads.js" defer></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+  }
+</script>
+</body>
+</html>

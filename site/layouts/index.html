@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="container">
+  <section class="hero">
+    <h1>심심해? 🎮</h1>
+    <p>설치도, 로그인도, 생각도 필요 없는 무료 브라우저 게임 모음</p>
+  </section>
+
+  {{ $games := where .Site.RegularPages "Section" "games" }}
+
+  {{ $genres := slice
+    (dict "id" "stress" "label" "💆 스트레스 해소" "color" "var(--c-stress)")
+    (dict "id" "idle"   "label" "🌾 천천히 즐기기" "color" "var(--c-idle)")
+    (dict "id" "puzzle" "label" "🧩 두뇌 & 퍼즐"   "color" "var(--c-puzzle)")
+    (dict "id" "arcade" "label" "🕹 아케이드"       "color" "var(--c-arcade)")
+    (dict "id" "board"  "label" "♟ 보드 & 전략"    "color" "var(--c-board)")
+    (dict "id" "korea"  "label" "🇰🇷 한국 특화"    "color" "var(--c-korea)")
+  }}
+
+  {{ range $genres }}
+    {{ $filtered := where $games "Params.category" .id }}
+    {{ if $filtered }}
+    <section class="section">
+      <div class="section-header">
+        <div class="section-dot" style="background:{{ .color }}"></div>
+        <h2>{{ .label }}</h2>
+      </div>
+      <div class="game-grid">
+        {{ range $filtered }}{{ partial "game-card.html" . }}{{ end }}
+      </div>
+    </section>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

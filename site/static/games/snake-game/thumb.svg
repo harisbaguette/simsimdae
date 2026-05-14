@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Grid dots -->
+  <g fill="rgba(0,0,0,0.1)">
+    <circle cx="30" cy="30" r="2"/><circle cx="60" cy="30" r="2"/><circle cx="90" cy="30" r="2"/><circle cx="120" cy="30" r="2"/>
+    <circle cx="150" cy="30" r="2"/><circle cx="180" cy="30" r="2"/><circle cx="210" cy="30" r="2"/><circle cx="240" cy="30" r="2"/>
+    <circle cx="270" cy="30" r="2"/><circle cx="300" cy="30" r="2"/><circle cx="330" cy="30" r="2"/><circle cx="360" cy="30" r="2"/>
+    <circle cx="30" cy="60" r="2"/><circle cx="60" cy="60" r="2"/><circle cx="90" cy="60" r="2"/><circle cx="120" cy="60" r="2"/>
+    <circle cx="150" cy="60" r="2"/><circle cx="180" cy="60" r="2"/><circle cx="210" cy="60" r="2"/><circle cx="240" cy="60" r="2"/>
+    <circle cx="270" cy="60" r="2"/><circle cx="300" cy="60" r="2"/><circle cx="330" cy="60" r="2"/><circle cx="360" cy="60" r="2"/>
+    <circle cx="30" cy="90" r="2"/><circle cx="60" cy="90" r="2"/><circle cx="90" cy="90" r="2"/>
+    <circle cx="30" cy="120" r="2"/><circle cx="60" cy="120" r="2"/>
+    <circle cx="30" cy="150" r="2"/>
+  </g>
+  <!-- Snake body segments -->
+  <!-- Tail end -->
+  <rect x="45" y="175" width="24" height="24" rx="6" fill="#15803d" stroke="#166534" stroke-width="1"/>
+  <rect x="45" y="145" width="24" height="24" rx="6" fill="#16a34a" stroke="#166534" stroke-width="1"/>
+  <rect x="45" y="115" width="24" height="24" rx="6" fill="#16a34a" stroke="#166534" stroke-width="1"/>
+  <rect x="45" y="85" width="24" height="24" rx="6" fill="#22c55e" stroke="#166534" stroke-width="1"/>
+  <rect x="75" y="85" width="24" height="24" rx="6" fill="#22c55e" stroke="#166534" stroke-width="1"/>
+  <rect x="105" y="85" width="24" height="24" rx="6" fill="#22c55e" stroke="#166534" stroke-width="1"/>
+  <rect x="135" y="85" width="24" height="24" rx="6" fill="#22c55e" stroke="#166534" stroke-width="1"/>
+  <rect x="165" y="85" width="24" height="24" rx="6" fill="#22c55e" stroke="#166534" stroke-width="1"/>
+  <rect x="195" y="85" width="24" height="24" rx="6" fill="#22c55e" stroke="#166534" stroke-width="1"/>
+  <rect x="225" y="85" width="24" height="24" rx="6" fill="#22c55e" stroke="#166534" stroke-width="1"/>
+  <rect x="255" y="85" width="24" height="24" rx="6" fill="#22c55e" stroke="#166534" stroke-width="1"/>
+  <rect x="285" y="85" width="24" height="24" rx="6" fill="#22c55e" stroke="#166534" stroke-width="1"/>
+  <rect x="285" y="55" width="24" height="24" rx="6" fill="#22c55e" stroke="#166534" stroke-width="1"/>
+  <rect x="285" y="25" width="24" height="24" rx="6" fill="#22c55e" stroke="#166534" stroke-width="1"/>
+  <rect x="315" y="25" width="24" height="24" rx="6" fill="#22c55e" stroke="#166534" stroke-width="1"/>
+  <!-- Snake head -->
+  <rect x="345" y="25" width="24" height="24" rx="8" fill="#4ade80" stroke="#166534" stroke-width="1.5"/>
+  <!-- Eyes on head -->
+  <circle cx="353" cy="33" r="3" fill="white"/>
+  <circle cx="363" cy="33" r="3" fill="white"/>
+  <circle cx="354" cy="34" r="1.5" fill="#1a1a1a"/>
+  <circle cx="364" cy="34" r="1.5" fill="#1a1a1a"/>
+  <!-- Apple/food -->
+  <circle cx="195" cy="157" r="16" fill="#ef4444" stroke="#b91c1c" stroke-width="2"/>
+  <rect x="193" y="140" width="4" height="8" rx="2" fill="#166534"/>
+  <path d="M197,143 Q207,138 210,145" stroke="#166534" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <circle cx="188" cy="152" r="3" fill="rgba(255,255,255,0.4)"/>
+  <text x="200" y="210" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">스네이크</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#b91c1c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Main quiz card -->
+  <rect x="40" y="15" width="320" height="140" rx="12" fill="white" opacity="0.95"/>
+  <!-- Card header -->
+  <rect x="40" y="15" width="320" height="38" rx="12" fill="#b91c1c"/>
+  <rect x="40" y="40" width="320" height="13" fill="#b91c1c"/>
+  <text x="200" y="38" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="white">한국어 퀴즈</text>
+  <!-- Question number -->
+  <rect x="52" y="24" width="38" height="20" rx="4" fill="rgba(255,255,255,0.2)"/>
+  <text x="71" y="38" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="white">Q.3</text>
+  <!-- Question text -->
+  <text x="200" y="85" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#1f2937">다음 중 '사과'의</text>
+  <text x="200" y="107" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#1f2937">영어 뜻은?</text>
+  <!-- Score indicator -->
+  <text x="330" y="38" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="rgba(255,255,255,0.8)">2/5</text>
+  <!-- Answer options -->
+  <!-- Option A (correct - highlighted) -->
+  <rect x="52" y="125" width="140" height="26" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="72" y="143" font-family="sans-serif" font-size="12" font-weight="bold" fill="#16a34a">A ✓ Apple</text>
+  <!-- Option B -->
+  <rect x="208" y="125" width="140" height="26" rx="6" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+  <text x="228" y="143" font-family="sans-serif" font-size="12" fill="#6b7280">B  Banana</text>
+  <!-- Answer options row 2 -->
+  <!-- Progress bar -->
+  <rect x="40" y="162" width="320" height="22" rx="8" fill="rgba(0,0,0,0.2)"/>
+  <rect x="40" y="162" width="128" height="22" rx="8" fill="rgba(255,255,255,0.5)"/>
+  <text x="200" y="178" text-anchor="middle" font-family="sans-serif" font-size="11" fill="white" opacity="0.9">진행도 2/5</text>
+  <!-- Stars/Score -->
+  <g font-size="22" text-anchor="middle">
+    <text x="110" y="205">⭐</text>
+    <text x="160" y="205">⭐</text>
+    <text x="210" y="205" opacity="0.4">⭐</text>
+    <text x="260" y="205" opacity="0.4">⭐</text>
+    <text x="310" y="205" opacity="0.4">⭐</text>
+  </g>
+  <text x="200" y="218" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="rgba(255,255,255,0.8)">한국어 퀴즈</text>
+</svg>

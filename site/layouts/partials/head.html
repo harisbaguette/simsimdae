@@ -1,0 +1,81 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}심심해? 게임 - 무료 브라우저 게임 모음{{ else }}{{ .Title }} - 심심해? 게임{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+<meta property="og:title" content="{{ if .IsHome }}심심해? 게임{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+{{ with .Params.game_id }}<meta property="og:image" content="{{ $.Site.BaseURL }}games/{{ . }}/thumb.svg">{{ end }}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#7c3aed">
+
+<link rel="manifest" href="/manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;900&family=Inter:wght@400;700;900&display=swap">
+<link rel="stylesheet" href="/assets/main.css">
+
+{{ if .Params.game_id }}
+<script type="application/ld+json">[
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "url": "{{ .Permalink }}",
+  "applicationCategory": "Game",
+  "operatingSystem": "Web Browser",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "genre": {{ .Params.tags | jsonify }},
+  "inLanguage": "ko",
+  "isAccessibleForFree": true,
+  "screenshot": "{{ $.Site.BaseURL }}games/{{ .Params.game_id }}/thumb.svg"
+},
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"홈","item":"{{ $.Site.BaseURL }}"},
+    {"@type":"ListItem","position":2,"name":"게임 목록","item":"{{ $.Site.BaseURL }}games/"},
+    {"@type":"ListItem","position":3,"name":"{{ .Title }}","item":"{{ .Permalink }}"}
+  ]
+},
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "{{ .Title }}은 무료인가요?",
+      "acceptedAnswer": {"@type":"Answer","text":"네, 완전 무료입니다. 설치나 로그인 없이 바로 플레이할 수 있습니다."}
+    },
+    {
+      "@type": "Question",
+      "name": "{{ .Title }}을 모바일에서 할 수 있나요?",
+      "acceptedAnswer": {"@type":"Answer","text":"네, 스마트폰과 태블릿 브라우저에서 터치로 즐길 수 있습니다."}
+    },
+    {
+      "@type": "Question",
+      "name": "{{ .Title }} 점수는 어디에 저장되나요?",
+      "acceptedAnswer": {"@type":"Answer","text":"점수는 브라우저 로컬 저장소에 저장됩니다. 계정이나 서버 전송 없이 내 기기에만 보관됩니다."}
+    }
+  ]
+}
+]</script>
+{{ end }}
+
+{{ if .IsHome }}
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "심심해? 게임",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.description }}",
+  "inLanguage": "ko"
+}</script>
+{{ end }}

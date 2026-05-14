@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="container" style="max-width:800px;padding:40px 16px">
+  <h1 style="font-size:1.8rem;font-weight:900;margin-bottom:24px">{{ .Title }}</h1>
+  <div style="color:var(--c-muted);font-size:.85rem;margin-bottom:24px">
+    {{ with .Date }}{{ .Format "2006년 01월 02일" }}{{ end }}
+  </div>
+  <div class="prose" style="line-height:1.8;color:var(--c-text)">
+    {{ .Content }}
+  </div>
+</div>
+{{ end }}

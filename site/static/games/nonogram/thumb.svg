@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#94a3b8"/>
+      <stop offset="100%" style="stop-color:#475569"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Nonogram grid 7x7 -->
+  <rect x="90" y="50" width="220" height="165" rx="5" fill="rgba(0,0,0,0.2)"/>
+  <!-- Column clue numbers -->
+  <g font-family="sans-serif" font-size="11" font-weight="bold" fill="rgba(255,255,255,0.85)" text-anchor="middle">
+    <text x="113" y="30">3</text>
+    <text x="143" y="22">1</text><text x="143" y="35">2</text>
+    <text x="173" y="30">5</text>
+    <text x="203" y="22">1</text><text x="203" y="35">2</text>
+    <text x="233" y="30">3</text>
+    <text x="263" y="22">2</text><text x="263" y="35">1</text>
+    <text x="293" y="30">4</text>
+  </g>
+  <!-- Row clue numbers -->
+  <g font-family="sans-serif" font-size="11" font-weight="bold" fill="rgba(255,255,255,0.85)" text-anchor="end">
+    <text x="88" y="75">2 1</text>
+    <text x="88" y="100">3</text>
+    <text x="88" y="125">5</text>
+    <text x="88" y="150">3</text>
+    <text x="88" y="175">2 1</text>
+    <text x="88" y="200">1</text>
+  </g>
+  <!-- Grid cells 7 cols x 6 rows, cell size ~30x25 -->
+  <!-- Filled cells making a shape (heart-like pixel art) -->
+  <!-- Row 1: col 1,3 filled -->
+  <rect x="98" y="55" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="128" y="55" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="158" y="55" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="188" y="55" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="218" y="55" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="248" y="55" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="278" y="55" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <!-- Row 2: cols 1,2,3 filled -->
+  <rect x="98" y="79" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="128" y="79" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="158" y="79" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="188" y="79" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="218" y="79" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="248" y="79" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="278" y="79" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <!-- Row 3: all filled -->
+  <rect x="98" y="103" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="128" y="103" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="158" y="103" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="188" y="103" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="218" y="103" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="248" y="103" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="278" y="103" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <!-- Row 4 -->
+  <rect x="98" y="127" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="128" y="127" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="158" y="127" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="188" y="127" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="218" y="127" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="248" y="127" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="278" y="127" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <!-- Row 5 -->
+  <rect x="98" y="151" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="128" y="151" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="158" y="151" width="28" height="22" rx="2" fill="#1e293b" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="188" y="151" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="218" y="151" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="248" y="151" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="278" y="151" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <!-- Row 6 -->
+  <rect x="98" y="175" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="128" y="175" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="158" y="175" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="188" y="175" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="218" y="175" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="248" y="175" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="278" y="175" width="28" height="22" rx="2" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="200" y="215" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">노노그램</text>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a3e635"/>
+      <stop offset="100%" style="stop-color:#65a30d"/>
+    </linearGradient>
+    <radialGradient id="hole-grad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#3f3f46"/>
+      <stop offset="100%" style="stop-color:#18181b"/>
+    </radialGradient>
+    <radialGradient id="mole-grad" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" style="stop-color:#d4a373"/>
+      <stop offset="100%" style="stop-color:#92400e"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Grass texture lines -->
+  <g stroke="rgba(0,100,0,0.3)" stroke-width="1.5" stroke-linecap="round">
+    <path d="M20,185 Q25,175 30,185"/>
+    <path d="M40,190 Q45,178 50,190"/>
+    <path d="M340,185 Q345,175 350,185"/>
+    <path d="M360,190 Q365,178 370,190"/>
+    <path d="M360,140 Q365,130 370,140"/>
+    <path d="M15,130 Q20,120 25,130"/>
+  </g>
+  <!-- 3x3 grid of holes -->
+  <!-- Row 1 holes -->
+  <ellipse cx="90" cy="65" rx="50" ry="22" fill="url(#hole-grad)" stroke="#15803d" stroke-width="2"/>
+  <ellipse cx="200" cy="65" rx="50" ry="22" fill="url(#hole-grad)" stroke="#15803d" stroke-width="2"/>
+  <ellipse cx="310" cy="65" rx="50" ry="22" fill="url(#hole-grad)" stroke="#15803d" stroke-width="2"/>
+  <!-- Row 2 holes -->
+  <ellipse cx="90" cy="135" rx="50" ry="22" fill="url(#hole-grad)" stroke="#15803d" stroke-width="2"/>
+  <ellipse cx="200" cy="135" rx="50" ry="22" fill="url(#hole-grad)" stroke="#15803d" stroke-width="2"/>
+  <ellipse cx="310" cy="135" rx="50" ry="22" fill="url(#hole-grad)" stroke="#15803d" stroke-width="2"/>
+  <!-- Mole popping up from center-left hole -->
+  <ellipse cx="90" cy="126" rx="28" ry="18" fill="#15803d"/>
+  <ellipse cx="90" cy="110" rx="28" ry="30" fill="url(#mole-grad)"/>
+  <!-- Mole face -->
+  <ellipse cx="90" cy="115" rx="18" ry="16" fill="#d4a373"/>
+  <circle cx="84" cy="108" r="4" fill="#1a1a1a"/>
+  <circle cx="96" cy="108" r="4" fill="#1a1a1a"/>
+  <circle cx="84.5" cy="107" r="1.5" fill="white"/>
+  <circle cx="96.5" cy="107" r="1.5" fill="white"/>
+  <ellipse cx="90" cy="118" rx="8" ry="5" fill="#fda4af"/>
+  <!-- Mole popping from top-right hole -->
+  <ellipse cx="310" cy="56" rx="28" ry="18" fill="#15803d"/>
+  <ellipse cx="310" cy="40" rx="28" ry="30" fill="url(#mole-grad)"/>
+  <ellipse cx="310" cy="45" rx="18" ry="16" fill="#d4a373"/>
+  <circle cx="304" cy="38" r="4" fill="#1a1a1a"/>
+  <circle cx="316" cy="38" r="4" fill="#1a1a1a"/>
+  <circle cx="304.5" cy="37" r="1.5" fill="white"/>
+  <circle cx="316.5" cy="37" r="1.5" fill="white"/>
+  <ellipse cx="310" cy="48" rx="8" ry="5" fill="#fda4af"/>
+  <!-- Hammer hitting center mole -->
+  <g transform="translate(200,65) rotate(-30)">
+    <rect x="-8" y="-60" width="16" height="50" rx="4" fill="#92400e"/>
+    <rect x="-18" y="-75" width="36" height="22" rx="5" fill="#78350f"/>
+    <rect x="-16" y="-73" width="32" height="8" rx="3" fill="rgba(255,255,255,0.2)"/>
+  </g>
+  <!-- Impact stars -->
+  <g transform="translate(200,65)">
+    <line x1="0" y1="-38" x2="0" y2="-48" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="27" y1="-27" x2="34" y2="-34" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-27" y1="-27" x2="-34" y2="-34" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="38" y1="0" x2="48" y2="0" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="-38" y1="0" x2="-48" y2="0" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <text x="200" y="210" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">두더지 잡기</text>
+</svg>

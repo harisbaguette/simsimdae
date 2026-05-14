@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225" width="400" height="225">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <radialGradient id="ball-grad" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" style="stop-color:#fefce8"/>
+      <stop offset="100%" style="stop-color:#fde68a"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="225" fill="url(#bg)"/>
+  <!-- Baseball diamond -->
+  <polygon points="200,30 320,105 200,180 80,105" fill="rgba(139,90,43,0.3)" stroke="rgba(255,255,255,0.5)" stroke-width="2.5"/>
+  <!-- Base paths -->
+  <line x1="200" y1="30" x2="320" y2="105" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <line x1="320" y1="105" x2="200" y2="180" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <line x1="200" y1="180" x2="80" y2="105" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <line x1="80" y1="105" x2="200" y2="30" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <!-- Bases -->
+  <rect x="192" y="22" width="16" height="16" rx="2" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <rect x="312" y="97" width="16" height="16" rx="2" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <rect x="192" y="172" width="16" height="16" rx="2" fill="#78350f" stroke="#d1d5db" stroke-width="1"/>
+  <rect x="72" y="97" width="16" height="16" rx="2" fill="white" stroke="#d1d5db" stroke-width="1"/>
+  <!-- Pitcher's mound -->
+  <ellipse cx="200" cy="105" rx="15" ry="10" fill="rgba(139,90,43,0.5)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <!-- Baseball -->
+  <circle cx="200" cy="105" r="14" fill="url(#ball-grad)" stroke="#d1d5db" stroke-width="1.5"/>
+  <path d="M194,95 Q200,105 194,115" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+  <path d="M206,95 Q200,105 206,115" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+  <!-- Number guessing game hints on sides -->
+  <rect x="10" y="25" width="55" height="165" rx="8" fill="rgba(0,0,0,0.25)"/>
+  <text x="37" y="42" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="rgba(255,255,255,0.8)">추측</text>
+  <text x="37" y="60" text-anchor="middle" font-family="monospace" font-size="13" fill="white">1234</text>
+  <text x="37" y="76" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#fbbf24">1S 2B</text>
+  <text x="37" y="96" text-anchor="middle" font-family="monospace" font-size="13" fill="white">5678</text>
+  <text x="37" y="112" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#fbbf24">0S 1B</text>
+  <text x="37" y="132" text-anchor="middle" font-family="monospace" font-size="13" fill="white">1357</text>
+  <text x="37" y="148" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#fbbf24">2S 0B</text>
+  <text x="37" y="168" text-anchor="middle" font-family="monospace" font-size="13" fill="white">1359</text>
+  <text x="37" y="184" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#86efac">3S 0B</text>
+  <!-- Answer panel -->
+  <rect x="335" y="65" width="55" height="75" rx="8" fill="rgba(0,0,0,0.3)"/>
+  <text x="362" y="83" text-anchor="middle" font-family="sans-serif" font-size="10" fill="rgba(255,255,255,0.7)">정답</text>
+  <text x="362" y="100" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">?</text>
+  <text x="362" y="116" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">?</text>
+  <text x="362" y="132" text-anchor="middle" font-family="sans-serif" font-size="11" fill="rgba(255,255,255,0.4)">?</text>
+  <text x="200" y="215" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white" opacity="0.9">숫자 야구</text>
+</svg>

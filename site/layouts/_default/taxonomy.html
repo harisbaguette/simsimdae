@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{ $catColors := dict "stress" "var(--c-stress)" "idle" "var(--c-idle)" "puzzle" "var(--c-puzzle)" "arcade" "var(--c-arcade)" "board" "var(--c-board)" "korea" "var(--c-korea)" }}
+{{ $catLabel := dict "stress" "💆 스트레스 해소" "idle" "🌾 천천히 즐기기" "puzzle" "🧩 두뇌 & 퍼즐" "arcade" "🕹 아케이드" "board" "♟ 보드 & 전략" "korea" "🇰🇷 한국 특화" }}
+{{ $key := .Data.Term }}
+{{ $color := index $catColors $key | default "var(--c-brand)" }}
+{{ $label := index $catLabel $key | default .Title }}
+
+<div class="container">
+  <section class="hero" style="padding:32px 0 24px">
+    <h1 style="font-size:clamp(1.6rem,4vw,2.4rem);font-weight:900">{{ $label }} 게임</h1>
+    <p style="color:var(--c-muted);margin-top:8px">설치·로그인 없이 바로 즐기는 무료 브라우저 게임 {{ len .Pages }}개</p>
+  </section>
+
+  <div class="section-header">
+    <div class="section-dot" style="background:{{ $color }}"></div>
+    <h2 style="font-size:1rem;color:var(--c-muted)">전체 {{ len .Pages }}개 게임</h2>
+  </div>
+
+  <div class="game-grid" style="margin-bottom:48px">
+    {{ range .Pages }}{{ partial "game-card.html" . }}{{ end }}
+  </div>
+
+  <script type="application/ld+json">{
+    "@context":"https://schema.org","@type":"ItemList",
+    "name":"{{ $label }} 무료 브라우저 게임","url":"{{ .Permalink }}",
+    "numberOfItems":{{ len .Pages }},
+    "itemListElement":[{{ range $i,$p := .Pages }}{{ if $i }},{{ end }}{"@type":"ListItem","position":{{ add $i 1 }},"url":"{{ $p.Permalink }}","name":"{{ $p.Title }}"}{{ end }}]
+  }</script>
+</div>
+{{ end }}

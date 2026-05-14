@@ -1,0 +1,9 @@
+<div class="lb-panel">
+  <div style="font-weight:700;font-size:.9rem;margin-bottom:10px;">🏆 리더보드</div>
+  <div class="lb-tabs">
+    <button class="lb-tab active" data-scope="local" onclick="LB.switchTab(this,'local','{{ .Params.game_id }}')">내 기록</button>
+    <button class="lb-tab" data-scope="session" onclick="LB.switchTab(this,'session','{{ .Params.game_id }}')">이번 세션</button>
+  </div>
+  <ol class="lb-list" id="lb-list"></ol>
+  <button class="share-btn" id="share-btn">📤 점수 공유</button>
+</div>

@@ -53,8 +53,8 @@
 <script>
 window.GAME_CONFIG = {
   gameId: "{{ $gid }}",
-  title: {{ .Title | jsonify }},
-  difficulties: {{ if .Params.difficulties }}{{ .Params.difficulties | jsonify }}{{ else }}[]{{ end }},
+  title: {{ .Title | jsonify | safeJS }},
+  difficulties: {{ if .Params.difficulties }}{{ .Params.difficulties | jsonify | safeJS }}{{ else }}[]{{ end }},
   stages: {{ .Params.stages | default 10 }},
   hasLeaderboard: {{ .Params.has_leaderboard | default false }},
   scoreType: "{{ .Params.score_type | default "points" }}",
